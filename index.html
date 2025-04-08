@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Test Page | Graphic Design Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/jquery/jquery-3.7.1.min.js"></script>
+        <script src="./js/script.js" defer></script>
+    </head>
+    <body>
+        <!-- Loading Animation -->
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading Creativity</div>
+        </div>
+
+        <!-- Floating Navigation Toggle -->
+        <div class="nav-toggle">
+            <div class="nav-toggle-line"></div>
+            <div class="nav-toggle-line"></div>
+            <div class="nav-toggle-line"></div>
+        </div>
+
+        <!-- Floating Social Links -->
+        <div class="social-links">
+            <a href="#" class="social-link" aria-label="Behance"><i class="fab fa-behance"></i></a>
+            <a href="#" class="social-link" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <header>
+            <nav>
+                <div class="logo">Test Page</div>
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#process" class="nav-link">Process</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Home Section -->
+        <section id="home" class="section hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="animated-text">Hello, I'm <span class="highlight">Test Page</span></h1>
+                    <p class="subtitle">Graphic designer</p>
+                    <div class="typewriter">
+                        <span class="typewriter-text">Creating memorable experiences</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn primary-btn">View My Work</a>
+                        <a href="#contact" class="btn secondary-btn">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <img src="./img/img1.jpg" alt="Test Page" class="profile-image" />
+                        <div class="decorative-shape shape-1"></div>
+                        <div class="decorative-shape shape-2"></div>
+                        <div class="decorative-shape shape-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section about-section">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./img/img1.jpg" alt="Werionika working on design" />
+                </div>
+                <div class="about-text">
+                    <p class="intro">
+                        I'm a passionate graphic designer with 4 years of experience creating visual identities that tell compelling stories and connect with audiences.
+                    </p>
+                    <p>
+                        My approach combines strategic thinking with artistic expression to develop designs that are not only beautiful but also effective in achieving business goals. I specialize in branding, packaging design, and digital experiences.
+                    </p>
+                    <div class="skills">
+                        <h3>My Skills</h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span>Brand Identity</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span>UI/UX Design</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span>Typography</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-info">
+                                    <span>Illustration</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn primary-btn download-btn">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="section process-section">
+            <div class="section-header">
+                <h2>My Design Process</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">How I transform ideas into impactful designs</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Discovery</h3>
+                        <p>Understanding your business, audience, and goals through research and strategy sessions.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Conceptualization</h3>
+                        <p>Developing creative directions and visual concepts that align with your brand strategy.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Design</h3>
+                        <p>Crafting high-quality visuals and refining them through an iterative feedback process.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Delivery</h3>
+                        <p>Providing final assets and guidelines to ensure consistent brand implementation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">A selection of my recent work</p>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="packaging">Packaging</button>
+                <button class="filter-btn" data-filter="digital">Digital</button>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item" data-category="branding">
+                    <img src="./img/img1.jpg" alt="Brand Identity Project" />
+                    <div class="overlay">
+                        <div class="description">
+                            <h3>Nova Coffee</h3>
+                            <p>Brand Identity</p>
+                            <button class="view-btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="packaging">
+                    <img src="./img/img1.jpg" alt="Packaging Design Project" />
+                    <div class="overlay">
+                        <div class="description">
+                            <h3>Organic Skincare</h3>
+                            <p>Packaging Design</p>
+                            <button class="view-btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="digital">
+                    <img src="./img/img1.jpg" alt="UI/UX Design Project" />
+                    <div class="overlay">
+                        <div class="description">
+                            <h3>Travel App</h3>
+                            <p>UI/UX Design</p>
+                            <button class="view-btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="branding">
+                    <img src="./img/img1.jpg" alt="Brand Identity Project" />
+                    <div class="overlay">
+                        <div class="description">
+                            <h3>Brewery Branding</h3>
+                            <p>Brand Identity</p>
+                            <button class="view-btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="digital">
+                    <img src="./img/img1.jpg" alt="Web Design Project" />
+                    <div class="overlay">
+                        <div class="description">
+                            <h3>Fitness Platform</h3>
+                            <p>Web Design</p>
+                            <button class="view-btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="packaging">
+                    <img src="./img/img1.jpg" alt="Packaging Design Project" />
+                    <div class="overlay">
+                        <div class="description">
+                            <h3>Chocolate Packaging</h3>
+                            <br>
+                            <p style="display: none;">
+                                Packaging Design lorem ipsum set dolorlorem ipsum set dolorlorem ipsum set dolorlorem ipsum set dolorlorem ipsum set dolorlorem ipsum set dolor
+                                lorem ipsum set dolorlorem ipsum set dolorlorem ipsum set dolorlorem ipsum set dolorlorem ipsum set dolorlorem ipsum set dolor <br>
+                                lorem ipsum set dolorlorem ipsum set dolorlorem ipsum set dolorlorem ipsum set dolorlorem ipsum set dolorlorem ipsum set dolor <br>
+                            </p>
+                            <button class="view-btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Let's create something amazing together</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>emial@emial.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Poland</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-icon" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-icon" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" />
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">Test Page</div>
+                <p class="footer-text">Creating meaningful design experiences that connect brands with their audiences.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#projects">Work</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                    <a href="#" class="social-icon" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Piotr Grzesista. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Lightbox -->
+        <div id="lightbox" style="display: none;">
+            <span class="close"></span>
+            <div class="lightbox-content">
+                <img src="./img/img1.jpg" alt="Fullscreen View" class="lightbox-image" />
+                <div class="lightbox-info">
+                    <h3 class="lightbox-title">Project Title</h3>
+                    <p class="lightbox-description">Project description goes here with details about the design process and outcomes.</p>
+                    <div class="lightbox-meta">
+                        <span class="lightbox-category">Branding</span>
+                        <span class="lightbox-date">2023</span>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </body>
+</html>
