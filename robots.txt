@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /css/
 Disallow: /js/
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://grzesista.com/sitemap.xml
