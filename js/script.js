@@ -116,8 +116,7 @@ $(document).ready(function () {
 
     $('.back-to-top').on('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
+    });    
 
     // Header scroll effect
     $(window).on('scroll', function () {
