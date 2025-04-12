@@ -209,9 +209,7 @@ $(document).ready(function () {
     
     // Start typewriter effect after loader
     setTimeout(typeWriter, 1500);
-});
 
-$(document).ready(function () {
     $('.nav-toggle').on('click', function () {
         $('#mobileNav').toggleClass('active');
         $(this).toggleClass('active');
@@ -219,5 +217,31 @@ $(document).ready(function () {
 
     $('.nav-link-mobile').on("click", function (e) {
         $('.nav-toggle').click();
+    });
+
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault(); 
+    
+        const form = e.target;
+        const formData = new FormData(form);
+    
+        fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                Accept: "application/json"
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                alert("Message sent successfully!");
+                form.reset(); 
+            } else {
+                alert("Oops! Something went wrong.");
+            }
+        })
+        .catch(error => {
+            alert("Error: " + error.message);
+        });
     });
 });
