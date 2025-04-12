@@ -127,20 +127,6 @@ $(document).ready(function () {
         }
     });
 
-    // Mobile navigation toggle
-    $('.nav-toggle').on('click', function () {
-        $(this).toggleClass('active');
-        $('nav ul').slideToggle(300);
-    });
-
-    // Close mobile menu when clicking a link
-    $('nav ul li a').on('click', function () {
-        if ($(window).width() <= 768) {
-            $('.nav-toggle').removeClass('active');
-            $('nav ul').slideUp(300);
-        }
-    });
-
     // Active nav link based on scroll position
     $(window).on('scroll', function () {
         const scrollPosition = $(this).scrollTop() + 100;
@@ -223,4 +209,15 @@ $(document).ready(function () {
     
     // Start typewriter effect after loader
     setTimeout(typeWriter, 1500);
+});
+
+$(document).ready(function () {
+    $('.nav-toggle').on('click', function () {
+        $('#mobileNav').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+
+    $('.nav-link-mobile').on("click", function (e) {
+        $('.nav-toggle').click();
+    });
 });
