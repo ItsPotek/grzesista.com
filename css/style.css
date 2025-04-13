@@ -37,7 +37,7 @@ body {
 body.dark-mode {
     --text-color: #F7FAFC;
     --text-light: #CBD5E0;
-    --white: #1A202C;
+    --white: #FFFFFF;
     --light-color: #2D3748;
 }
 
