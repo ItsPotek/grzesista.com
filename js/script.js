@@ -219,29 +219,29 @@ $(document).ready(function () {
         $('.nav-toggle').click();
     });
 
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
-        e.preventDefault(); 
+    $("#contactForm").submit(function (e) {
+        e.preventDefault();
     
-        const form = e.target;
-        const formData = new FormData(form);
+        const form = $(this);
+        const formData = new FormData(this);
     
-        fetch(form.action, {
+        $.ajax({
+            url: form.attr("action"),
             method: "POST",
-            body: formData,
+            data: formData,
+            processData: false,
+            contentType: false,
             headers: {
                 Accept: "application/json"
-            }
-        })
-        .then(response => {
-            if (response.ok) {
+            },
+            success: function (response) {
                 alert("Message sent successfully!");
-                form.reset(); 
-            } else {
-                alert("Oops! Something went wrong.");
+                form[0].reset();
+            },
+            error: function (xhr, status, error) {
+                alert("An error occurred: " + error.message + "\nIf you're using a mobile device, try switching to a PC for a better experience.");
             }
-        })
-        .catch(error => {
-            alert("An error occurred: " + error.message + "\nIf you're using a mobile device, try switching to a PC for a better experience.");
         });
     });
+    
 });
