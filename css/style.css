@@ -6,9 +6,9 @@
 }
 
 :root {
-    --primary-color: #FF3D3D; /* Red */
-    --secondary-color: #D63030; /* Darker red */
-    --accent-color: #FF6B6B; /* Lighter red */
+    --primary-color: #FF3D3D; 
+    --secondary-color: #D63030;
+    --accent-color: #FF6B6B;
     --dark-color: #2D3748;
     --light-color: #F7FAFC;
     --gray-color: #A0AEC0;
@@ -19,7 +19,7 @@
     --transition: all 0.3s ease;
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);    
     --border-radius: 8px;
     --border-radius-lg: 16px;
 }
@@ -37,7 +37,7 @@ body {
 body.dark-mode {
     --text-color: #F7FAFC;
     --text-light: #CBD5E0;
-    --white: #FFFFFF;
+    --white: #282f3c;
     --light-color: #2D3748;
 }
 
@@ -661,7 +661,7 @@ body.dark-mode .skill-bar {
 }
 
 .description h3 {
-    color: var(--white);
+    color: #FFFFFF;
     margin-bottom: 0.5rem;
 }
 
